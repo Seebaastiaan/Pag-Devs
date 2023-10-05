@@ -1,0 +1,342 @@
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+     margin: 0;
+}
+
+h1{ font-size: 3.5em;}
+h2{ font-size: 3.7em;}
+h3{ font-size: 2em;}
+p{ font-size: 1.25em;}
+
+header .logoHTML{
+    max-width: 85px;
+    max-height: 85px;
+    margin: 0;
+    cursor: pointer;
+}
+.banner{
+    max-width: 1200px;
+    margin: auto;
+}
+
+header{
+    background-color: rgb(255, 255, 255);
+}
+
+header .banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+header .burguer{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background-color: rgb(227,76,36);
+    margin: 0px 20px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    color: white;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: rgb(227,76,36);
+}
+
+#inicio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("Images/Inicio.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#Inicio h1{
+    color: white;
+}
+
+
+#historia .containerhistoria{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#ques{
+    background-color: rgb(29, 29, 29);
+    color: white;
+}
+
+#ques .containerques{
+    text-align: center;
+    padding: 100px 0px;
+}
+
+#sirve .containersirve{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#etiqueta{
+    background-color: rgb(29, 29, 29);
+    color: white;
+}
+
+#etiqueta .containeretiqueta{
+    text-align: left;
+    padding: 100px 0px;
+}
+
+#etiqueta p{
+    padding: 0px 10px;
+    text-align: center;
+}
+
+#etiqueta ul li{
+    padding: 0px 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#etiqueta h2{
+    padding: 0px 10px;
+    text-align: center;
+}
+
+#frecuentes{
+    background-color: rgb(255, 255, 255);
+}
+
+#frecuentes .containerfrecu{
+    text-align: left;
+    padding: 100px 0px;
+}
+
+#frecuentes ul{
+    font-size: 20px;
+    font-weight: bold;
+}
+#frecuentes h2{
+    padding: 0px 10px;
+    text-align: center;
+}
+
+/*-----------------------------------------------------------------*/
+@media (min-width: 720px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+    header .banner{
+        flex-direction: row;
+        
+    }
+
+    header nav{
+        justify-content: space-between;
+        flex-direction: row;
+        padding-inline-start:40px ;
+        margin-top: 20px;  
+    }
+
+    header .logoHTML{
+    margin-right: auto;
+    padding: 0 0;
+    max-width: 65px;
+    max-height: 65px;
+    cursor: pointer;
+    justify-content: left;
+    }
+    #inicio h1{
+        font-size: 5em;
+    }
+
+    #historia .containerhistoria{
+        display: flex;
+        justify-content: space-evenly;
+        padding: 300px 12px;
+    }
+
+    #historia .img-historia{
+        background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+        ,url("Images/Historia.jpg");
+        background-size: cover;
+        background-position: center center;
+        min-height: 400px;
+        min-width: 550px;
+    }
+    #historia .texto{
+        width: 50%;
+        text-align: initial;
+        padding-left: 30px;
+        max-width: 600px;
+        display: flex;
+        justify-content:center ;
+        flex-direction: column;
+    }
+
+    #historia h2{
+        margin-top: 0%;
+    }
+
+#ques .containerques{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 300px 12px;
+}
+
+#ques .img-ques{
+    background-image:url("Images/ques.jpg");
+    background-size: cover;
+    background-position: center center;
+    min-height: 400px;
+    min-width: 550px;
+    cursor: pointer;
+}
+#ques .texto{
+    width: 50%;
+    text-align: initial;
+    padding-left: 30px;
+    max-width: 600px;
+    display: flex;
+    justify-content:center ;
+    flex-direction: column;
+}
+
+#ques h2{
+    margin-top: 0%;
+}
+
+#sirve .containersirve{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 300px 12px;
+}
+
+#sirve .img-sirve{
+    background-image:url("Images/sirve.png");
+    background-size: cover;
+    background-position: center center;
+    min-height: 400px;
+    min-width: 550px;
+    cursor: pointer;
+}
+#sirve .texto{
+    width: 50%;
+    text-align: initial;
+    padding-left: 30px;
+    max-width: 600px;
+    display: flex;
+    justify-content:center ;
+    flex-direction: column;
+}
+
+#sirve h2{
+    margin-top: 0%;
+}
+
+#etiqueta .containeretiqueta{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 300px 12px;
+}
+
+#etiqueta .img-etiqueta{
+    background-image:url("Images/etiquetaa.png");
+    background-size: cover;
+    background-position: center center;
+    min-height: 454px;
+    min-width: 404px;
+    cursor: pointer;
+}
+#etiqueta .texto{
+    width: 50%;
+    text-align: initial;
+    padding-left: 30px;
+    max-width: 600px;
+    display: flex;
+    justify-content:center ;
+    flex-direction: column;
+}
+
+#etiqueta h2{
+    margin-top: 0%;
+}
+
+#etiqueta ul{
+    font-size: 18px;
+    font-weight: bold;
+}
+/*
+-----------------------------------------------------------------
+*/
+#frecuentes .containerfrecu{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#frecuentes .img-frecu{
+    background-image:url("Images/frecuentes.jpg");
+    background-size: cover;
+    background-position: center center;
+    min-height: 350px;
+    min-width: 550px;
+
+}
+#frecuentes .texto{
+    width: 50%;
+    text-align: initial;
+    padding-left: 30px;
+    max-width: 600px;
+    display: flex;
+    justify-content:center ;
+    flex-direction: column;
+}
+
+#frecuentes h2{
+    margin-top: 0%;
+}
+
+#frecuentes ul{
+    font-size: 18px;
+    font-weight: bold;
+}
+}
+

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="stylegit.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <title>Git</title>
+</head>
+<body>
+    <header>
+        <div class="banner">
+            <a href="../index.html">
+                <div class="burguer">
+                    <span class="material-symbols-outlined">
+                        home
+                        </span>
+                </div>
+            </a>
+            <a class="logoGIT" href="#inicio"> 
+                <img class="logoGIT" src="Images/LogoGit.png" alt="LogoGit">
+            </a>
+            <nav>
+                
+                <a href="#historia">Historia</a>
+                <a href="#ques">¿Qué es?</a>
+                <a href="#sirve">¿Para qué sirve?</a>
+                <a href="#estructura">Estructura de git</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="inicio">
+        <h1>En esta página verás que es <br> Git </h1>
+    </section>
+<!--------------------------------------------------------------------------------------------------------------------------------->
+    
+    <section id="historia">
+        <div class="containerhistoria">
+            
+            <div class="img-historia"></div>
+            <div class="texto">
+                <h2>¿Cual es la historia de GIT?</h2>
+                <p>Como muchas de las grandes cosas en esta vida, Git comenzó con un poco de destrucción creativa y una gran polémica.
+
+                    El kernel de Linux es un proyecto de software de código abierto con un alcance bastante amplio. Durante la mayor parte del mantenimiento del kernel de Linux (1991-2002), los cambios en el software se realizaban a través de parches y archivos. En el 2002, el proyecto del kernel de Linux empezó a usar un DVCS propietario llamado BitKeeper.
+                    
+                    En el 2005, la relación entre la comunidad que desarrollaba el kernel de Linux y la compañía que desarrollaba BitKeeper se vino abajo y la herramienta dejó de ser ofrecida de manera gratuita. Esto impulsó a la comunidad de desarrollo de Linux (y en particular a Linus Torvalds, el creador de Linux) a desarrollar su propia herramienta basada en algunas de las lecciones que aprendieron mientras usaban BitKeeper. </p>
+            </div>
+    </div>
+    </section>
+
+<!--------------------------------------------------------------------------------------------------------------------------------->
+ 
+<section id="ques">
+    <div class="containerques">
+        <div class="img-ques"></div>
+        <div class="texto">
+            <h2>¿Qué es Git?</h2>
+            <p>Git es un sistema de control de versiones distribuido, lo que significa que un clon local del proyecto es un repositorio de control de versiones completo. Estos repositorios locales plenamente funcionales permiten trabajar sin conexión o de forma remota con facilidad. Los desarrolladores confirman su trabajo localmente y, a continuación, sincronizan su copia del repositorio con la copia en el servidor. Este paradigma es distinto del control de versiones centralizado, donde los clientes deben sincronizar el código con un servidor antes de crear nuevas versiones.
+
+            </p>
+        </div>
+            
+    </div>
+</section>
+
+<!--------------------------------------------------------------------------------------------------------------------------------->
+ 
+<section id="sirve">
+    <div class="containersirve">
+
+        <div class="img-sirve"></div>
+        <div class="texto">
+
+            <h2>¿Para qué sirve Git?</h2>
+            <p>Git es un sistema de control de versiones distribuido de código abierto, el control de versiones distribuido permite a los desarrolladores descargar un software, realizar cambios y subir la versión que han modificado.Todas las modificaciones subidas se guardan en versiones independientes,no sobrescribiendo en el archivo original.
+                La diferencia entre el control de versiones y Git, es que en Git cada desarrollador tendrá en el ordenador una copia del código fuente original y de las versiones disponibles del proyecto, permitiendo la ramificación y fusión.
+                De esta forma todos los desarrolladores interesados en el proyecto podrán ver las modificaciones realizadas y contribuir mejorando el código del Software.
+                
+            </p>
+        </div>            
+    </div>
+</section>
+
+<!--------------------------------------------------------------------------------------------------------------------------------->
+ 
+<section id="estructura">
+    <div class="containerestructura">
+
+        <div class="img-estructura"></div>
+        <div class="texto">
+            <h2>Estructura de Git</h2>
+            
+                <ol>
+                    <li><b>Working dir/Área de trabajo:</b>
+                        Es el estado actual de nuestros ficheros, aquellos en los que programamos y que podemos visualizar en nuestro navegador de archivos.</li>
+                    <li><b>Staging Area/Index/Área de ensayo:</b>
+                        Es una zona intermedia donde vamos almacenando los cambios que van a conformar un commit. Pueden ser ficheros completos o solo porciones concretas. Para "pasar" ficheros a esta zona usamos el comando add. Necesariamente hay que enviar los cambios al staging area antes de poder realizar un commit.</li>
+                    <li><b>El repositorio local: </b>
+                        Es donde se almacenan los commits mediante el comando commit, una vez hemos seleccionado los cambios en el index. Toda su información se guarda en el directorio .git.</li>
+                    <li><b>Los repositorios remotos:</b>
+                        Puede ser uno solo (por defecto se llama origin), o podríamos tener varios. La comunicación entre el repositorio local y los remotos se realiza mediante los comandos push(enviar) y pull(descargar).</li>
+                    <li><b>*Stash</b>
+                        Es la zona de guardado rápido, una zona auxiliar para guardar los cambios en los que estamos trabajando cuando por algún motivo nos interrumpen y tenemos que cambiar de rama, pero aún no queremos hacer un commit porque es un commit a medias, sin acabar. Puede almacenar n estados y funciona como una pila, colocando siempre el primero los últimos cambios que salvemos.
+                    </li>
+                </ol>
+            
+            </div>
+        
+    </div>
+</section>
+<!--------------------------------------------------------------------------------------------------------------------------------->
+ 
+</body>
+</html>

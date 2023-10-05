@@ -1,0 +1,712 @@
+
+.nav, .menu {
+    display: flex;
+    justify-content:left;
+    align-items: center;
+}
+
+.nav {
+    position: fixed;
+    background-color: #000000;
+    padding: 20px;
+    transition: 0.5s;
+    border-radius: 50px;
+    overflow: hidden;
+    box-shadow: 0 8px 15px rgba(0,0,0,.2);
+    
+}
+
+.menu {
+    margin: 0;
+    padding: 0;
+    width: 0;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.nav input:checked ~ .menu {
+    width: 100%;
+}
+
+.menu li {
+    list-style: none;
+    margin: 0 10px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #ebebeb;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.menu li a:hover {
+    color: #1a1b1b;
+}
+
+.nav input {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.nav span {
+    position: absolute;
+    left: 30px;
+    width: 30px;
+    height: 4px;
+    border-radius: 50px;
+    background-color: #ffffff;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.nav input:checked ~ span {
+    background-color: #f974a1;
+}
+
+.nav span:nth-child(2) {
+    transform: translateY(-8px);
+}
+
+.nav input:checked ~ span:nth-child(2) {
+    transform: translateY(0) rotate(-45deg);
+}
+.nav span:nth-child(3) {
+    transform: translateY(8px);
+}
+
+.nav input:checked ~ span:nth-child(3) {
+    transform: translateY(0) rotate(45deg);
+}
+
+
+.titulo{
+    animation-duration: 6s;
+    animation-name: slidein;
+    animation-iteration-count:initial;
+    animation-direction: alternate;
+}
+
+@keyframes slidein{
+    from{
+    margin-left: 100%;
+    width: 300%;
+    }
+    to{
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+
+.logo{
+    width: 250px;
+    height: 60px;
+}
+
+.logoGitHub{
+    width: 60px;
+    height: 60px;
+}
+
+nav .barnav{
+    display:grid;
+    grid-template-columns: repeat(4,auto);
+    margin-right: 10px;
+    margin-left: 70px;
+}
+
+
+.foto{
+    display: flex;
+    margin: 27px;
+    border-radius: 50%;
+    height: 220px;
+    width: 220px;
+       
+}
+
+
+.foto:hover{
+    -webkit-transform: scale(1.3);
+    -moz-transform: scale(1.45);
+    -o-transform: scale(1.45);
+    -ms-transform: scale(1.45);
+    transform: scale(1.45);
+}
+
+.foto, foto:hover, .todo, .todo:hover {
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+}
+
+h1{
+    font-family:monospace;
+    font-size: 50px;
+    color:rgb(100, 92, 215);
+    text-align: center;
+    font-weight:bold;
+}
+
+body {
+    display: grid;
+    background: #ffffff;
+    color: #666666;
+    font-family: "Open Sans", sans-serif;
+    overflow-x: hidden;
+}
+p{
+    font-family:arial;
+    color:rgb(0, 0, 0);
+
+}
+
+.datos{    
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    padding-left: 0%;
+}
+
+.name{
+    color: #171717;
+    font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+
+.sd{
+    color: #666666;
+    font-weight: bold;
+    font-size: large;
+    
+}
+
+.ani1{
+    animation-duration: 3s;
+    animation-name: slidein1;
+    animation-iteration-count:initial;
+    animation-direction:normal;
+}
+
+@keyframes slidein1{
+    from{
+    margin-left: 100%;
+    width: 300%;
+    }
+    to{
+        margin-left: 100%;
+        width: 100%;
+    }
+}
+
+.ani2{
+    animation-duration: 4s;
+    animation-name: apear1;
+    animation-iteration-count:initial;
+    animation-direction:normal;
+}
+
+@keyframes apear1{
+    from{
+    opacity: 0;
+    }
+    to{
+    opacity: 1;
+    }
+}
+
+.des{
+    align-items: center;
+    color: #757575;
+    font-weight:bolder;
+    font-size:x-large;
+    font-family: monospace;
+    text-align: center;
+    width: 800px;
+}
+
+.exp{
+    justify-content: center;
+    font-size:xx-large;
+    left: 43%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:rgb(100, 92, 215);    
+    width: 200px;
+    padding-left: 25%;
+}
+
+.cajas{
+    width: 300px;
+    left: 38%;
+    padding-left: 15%;
+    justify-content: center;
+}
+
+.listitas{
+    font-size: x-large;
+    font-family: monospace;
+    color: #292828;
+    left: 15%;
+    font-weight: bold;
+    width: 200px;
+}
+
+.listitas h5{
+    color: #757575;
+}
+
+
+
+.cosas ul{
+    left: 5rem;
+    list-style-type: none;
+    padding-inline-start: 40px;
+    width: 300px;
+}
+  
+.cosas ul li{
+    padding-left: 2rem;
+    background-image: url(img/listas.png);
+    background-position: 0 0;
+    background-size: 1.6rem 1.6rem;
+    background-repeat: no-repeat;
+    justify-content: center;
+    
+}
+
+
+.edu{
+    justify-content: center;
+    font-size:xx-large;
+    left: 40%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:rgb(100, 92, 215);    
+    width: 300px;
+    padding-left: 25%;
+}
+
+.cajas2{
+    width: 400px;
+    left: 55%;
+    top: -546px;
+    align-items: center;
+    display:block;
+    justify-content: center;
+    z-index: 1;
+    position:relative;
+}
+.listitas2{
+    font-size: x-large;
+    font-family: monospace;
+    color: #292828;
+    left: 25%;
+    font-weight: bold;
+}
+
+.listitas2 h5{
+    color: #757575;
+}
+
+.pasa{
+    align-items: center;
+    justify-content: center;
+    padding-top: 5%;
+}
+
+.obj{
+    align-items: center;
+    justify-content: center;
+    padding-top: 0%;
+}
+
+.fotobatiz{
+    width: 500px;
+    height: 350px;
+    left: 10%;
+    opacity: 0.5;    
+}
+.fotobatiz:hover{
+    opacity: 1;
+}
+
+.fotobatiz, .fotobatiz:hover, .cont-pasa, .cont-pasa:hover {
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+}
+
+
+.cont-pasa{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    top: 50px;
+}
+
+.cont-lis{
+    width: 250px;
+    left: 80%;  
+    text-align: justify;
+}
+.cosas{
+    height: 600px;
+    justify-content: center;
+}
+
+.text-pasa{    
+    font-size: xx-large;
+    font-family: monospace;
+    color: #292828;
+    left: 70%;
+}
+
+.cont-lis ul{
+    left: 5rem;
+    list-style-type: none;
+    width: 300px;
+}
+  
+.cont-lis ul li{
+    padding-left: 2rem;
+    background-image: url(img/listas.png);
+    background-position: 0 0;
+    background-size: 1.6rem 1.6rem;
+    background-repeat: no-repeat;
+    justify-content: center;
+    padding-bottom: 1ex;
+}
+
+.html-sect{
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    padding-top: 200px;
+}
+
+.quehtml{
+    top: 100px;
+    height: 140px;
+    width: 40%;
+    background-color: #ffffff;
+    border-top: 1px solid rgb(0, 0, 0);
+    border-right: 1px solid rgb(0, 0, 0);
+    border-bottom: 1px solid rgb(0, 0, 0);
+    border-left: 1px solid rgb(0, 0, 0);
+    color: #ebebeb;
+    font-weight: 600;
+    font-family: monospace;
+    border-radius:20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.text-html{
+    height: 2700px;
+    width: 1000px;
+    border-top: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+    border-left: 1px solid #cccccc;
+    color: #1d1c1c;
+    font-family: monospace;
+    text-align: center;
+    border-radius:20px;
+    margin-right: 10px;
+}
+
+.text-html-sect{
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    padding-top: 20px;
+    text-align: justify;
+}
+
+.texto-html{
+    align-items: center;
+    color: #575757;
+    font-size:x-large;
+    font-family: monospace;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.ejemplo-html{
+    width: 650px;
+    height: 500px;
+   
+    padding-top: 10%;
+}
+
+.text-html h2{
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: #000000;
+}
+
+.text-html ul{
+  width: 900px;
+}
+
+.text-html ul li{
+    display: flex;
+    padding-left: 4rem;
+    background-image: url(img/proximo.png);
+    background-position: 5% 1%;
+    background-size: 1.6rem 1.6rem;
+    background-repeat: no-repeat;
+    justify-content: center;
+    padding-bottom: 1ex;
+    color: #969191;
+    font-size:x-large;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+
+.sect-git{
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    padding-top: 100px;
+}
+
+.barra-git{
+    background-color: #ffffff;
+    width: 120%;
+    height: 70px;
+    justify-content: center;
+    display: grid;
+    padding-top: 1%;
+    left: -20px;
+}
+
+.sect-git ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ffffff;
+    justify-content: center;
+    display: flex;
+}
+
+.sect-git li {
+    float: left;
+}
+
+.sect-git li a {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: x-large;
+    border-radius: 40px;
+}
+
+.sect-git li a:hover:not(.active) {
+    background-color: #6558db;
+    transition-duration: 1s;
+    color: white;
+}
+
+.text-git-sect{
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    padding-top: 50px;
+    text-align: justify;
+}
+
+.des-git{
+    align-items: center;
+    color: #757575;
+    font-weight:bolder;
+    font-size:x-large;
+    font-family: monospace;
+    text-align: center;
+    width: 800px;
+    padding-top: 30px;   
+    padding-left: 20%;
+    justify-content: center;
+}
+
+.framesito{
+    height: 900px;
+    width: 900px;
+    border: 0px solid;
+    padding-top: 40px;
+    animation-duration: 1s;
+}
+
+.ejemplo-init{
+    width: 700px;
+    height: 200px;
+    padding-top: 5%;
+}
+
+.ejemplo-status{
+    width: 450px;
+    height: 255px;
+    padding-top: 5%;
+}
+
+.ejemplo-branch{
+    width: 500px;
+    height: 300px;
+    padding-top: 5%;
+}
+
+.list-check{
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    text-align: justify;
+}
+
+.list-check ul{
+    width: 900px;
+  }
+  
+.list-check ul li{
+    display: flex;
+    padding-left: 4rem;
+    background-image: url(img/proximo.png);
+    background-position: 5% 1%;
+    background-size: 1.6rem 1.6rem;
+    background-repeat: no-repeat;
+    justify-content: center;
+    padding-bottom: 1ex;
+    color: #969191;
+    font-size:x-large;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 10px;
+}
+
+.text-git{
+    height: 1000px;
+    width: 1000px;
+    border-top: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+    border-left: 1px solid #cccccc;
+    color: #1d1c1c;
+    font-family: monospace;
+    text-align: center;
+    border-radius:20px;
+    margin-right: 10px;
+}
+
+.cont-css{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+.cont-img-css{
+    display: flex;
+}
+
+.fotocss{
+    width: 500px;
+    height: 350px;
+}
+
+.his-css{
+    background-color: #000000;
+    color: #ebebeb;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 300px;
+    padding-top: 40px;
+}
+
+.texto-css-hist{
+    align-items: center;
+    color: #dadada;
+    font-size:x-large;
+    font-family: monospace;
+    padding-top: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    padding-left: 15%;
+}
+
+.texto-css-hist2{
+    align-items: center;
+    color: #525252;
+    font-size:x-large;
+    font-family: monospace;
+    padding-top: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    padding-left: 15%;
+}
+
+.cosas2{
+    align-items: center;
+    color: #575757;
+    font-size:x-large;
+    font-family: monospace;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    padding-bottom: 40px;
+}
+
+.cosas2 ul{
+    width: 900px;
+  }
+  
+.cosas2 ul li{
+    display: flex;
+    padding-left: 4rem;
+    background-image: url(img/flecha3.png);
+    background-position: 5% 1%;
+    background-size: 1.3rem 1.3rem;
+    background-repeat: no-repeat;
+    justify-content: center;
+    padding-bottom: 1ex;
+    color: #2b2a2a;
+    font-size:large;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.footer{
+    height: 150px;
+    background-color: #000000;
+}

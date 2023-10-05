@@ -1,0 +1,100 @@
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    color: white;
+    
+
+}
+.todillo{
+
+    background-color: #f44c34;
+    margin: 30px;
+    padding: 6rem;
+    font-size: x-large;
+
+}
+.main{
+    margin-top: 10rem;
+}
+
+.encabezado{
+    
+    height: 60px;
+    background-color:black;
+    align-items: center;
+    padding: 2rem 2rem ;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    
+    
+    
+}
+
+.logo-nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.loggit{
+    
+    text-align: left;
+    height: 70px;
+    margin-left: 30px;
+    
+}
+
+
+.menu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.menu ul li{
+    display: inline-block;
+}
+
+.menu ul li a {
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: all 0.4s linear;
+}
+
+.menu ul li a:hover{
+    background-color: rgb(6, 6, 6);
+    color: white;
+    
+}
+
+.botones{
+    text-decoration: none;
+    background:#f44c34;
+    color: white;
+    padding: 10px;
+    border-radius: 30px;
+    box-shadow: 3px 3px black;
+    margin: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+.ejemplos{
+    object-fit: cover;
+    border-width: 50px;
+    border-radius: 50px;
+    box-shadow: 5px 5px 5px black;
+}
+
+.subti{
+    padding-top: 10rem;
+    font-size: x-large;
+    text-align: center;
+}
+
+
+
+

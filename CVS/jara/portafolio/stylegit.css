@@ -1,0 +1,277 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+     margin: 0;
+}
+
+h1{ font-size: 3.5em;}
+h2{ font-size: 3.7em;}
+h3{ font-size: 2em;}
+p{ font-size: 1.25em;}
+
+
+header .logoGIT{
+    max-width: 124px;
+    max-height: 85px;
+    margin: 0;
+    cursor: pointer;
+
+}
+
+.banner{
+    max-width: 1200px;
+    margin: auto;
+}
+
+header{
+    background-color: rgb(0, 0, 0);
+}
+
+header .banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+header .burguer{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background-color: rgb(0, 0, 0);
+    margin: 0px 20px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    color: white;
+    border-style: solid;
+    border-width: 2px;
+    border-color: white ;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+header a:hover{
+    color: rgb(163, 163, 163);
+}
+
+#inicio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("Images/Inicio.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#Inicio h1{
+    color: white;
+}
+#historia{
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+#historia .containerhistoria{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+
+
+#ques .containerques{
+    text-align: center;
+    padding: 100px 0px;
+}
+
+#sirve .containersirve{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#estructura{
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+#estructura .containerestructura{
+    text-align: center;
+    padding: 100px 0px;
+}
+/*-------------------------------------------------------------------*/
+@media (min-width: 720px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+    header .banner{
+        flex-direction: row;
+        
+    }
+
+    header nav{
+        justify-content: space-between;
+        flex-direction: row;
+        padding-inline-start:40px ;
+        margin-top: 20px;  
+    }
+    header .logoGIT{
+        margin-right: auto;
+        padding: 0 0;
+        max-width: 65px;
+        max-height: 65px;
+        cursor: pointer;
+        justify-content: left;
+        }
+        #inicio h1{
+            font-size: 5em;
+        }
+
+        #historia .containerhistoria{
+            display: flex;
+            justify-content: space-evenly;
+            padding: 130px 12px;
+        }
+    
+        #historia .img-historia{
+            background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+            ,url("Images/HistoriaGIT.jpg");
+            background-size: cover;
+            background-position: center center;
+            min-height: 400px;
+            min-width: 550px;
+        }
+        #historia .texto{
+            width: 50%;
+            text-align: initial;
+            padding-left: 30px;
+            max-width: 600px;
+            display: flex;
+            justify-content:center ;
+            flex-direction: column;
+        }
+    
+        #historia h2{
+            margin-top: 0%;
+        }
+
+        #ques .containerques{
+            display: flex;
+            justify-content: space-evenly;
+            padding: 130px 12px;
+        }
+        
+        #ques .img-ques{
+            background-image:url("Images/quesGIT.jpg");
+            background-size: cover;
+            background-position: center center;
+            min-height: 500px;
+            min-width: 550px;
+            cursor: pointer;
+        }
+        #ques .texto{
+            width: 50%;
+            text-align: initial;
+            padding-left: 30px;
+            max-width: 600px;
+            display: flex;
+            justify-content:center ;
+            flex-direction: column;
+        }
+        
+        #ques h2{
+            margin-top: 0%;
+        }
+        
+        #sirve .containersirve{
+            display: flex;
+            justify-content: space-evenly;
+            padding: 130px 12px;
+        }
+        
+        #sirve .img-sirve{
+            background-image:url("Images/sirveGIT.jpg");
+            background-size: cover;
+            background-position: center center;
+            min-height: 500px;
+            min-width: 550px;
+            cursor: pointer;
+        }
+        #sirve .texto{
+            width: 50%;
+            text-align: initial;
+            padding-left: 30px;
+            max-width: 600px;
+            display: flex;
+            justify-content:center ;
+            flex-direction: column;
+        }
+        
+        #sirve h2{
+            margin-top: 0%;
+        }
+/*----------------------------------------------------*/
+#estructura .containerestructura{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 130px 12px;
+}
+
+#estructura .img-estructura{
+    background-image:url("Images/EstructuraGIT.png");
+    background-size: cover;
+    background-position: center center;
+    max-height: 600px;
+    max-width: 650px;
+    min-height: 600px;
+    min-width: 650px;
+}
+#estructura .texto{
+    width: 50%;
+    text-align: initial;
+    padding-left: 30px;
+    max-width: 600px;
+    display: flex;
+    justify-content:center ;
+    flex-direction: column;
+}
+
+#estructura h2{
+    margin-top: 0%;
+}
+
+#estructura ol{
+    font-size: 18px;
+}
+
+}
