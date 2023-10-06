@@ -1,0 +1,41 @@
+#body {
+  background-color: rgb(33, 32, 33);
+}
+
+.texto {
+  font-size: 20px;
+  color: white;
+}
+.title {
+  font-size: 26px;
+  color: white;
+}
+
+.container-main {
+  display: flex;
+  justify-content: space-around;
+  padding: 10% 10%;
+  gap: 70px;
+}
+
+.imagen {
+  max-width: 400px;
+  max-height: 400px;
+}
+
+.textito-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container {
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding-bottom: 40px;
+}
